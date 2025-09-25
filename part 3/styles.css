@@ -1,0 +1,26 @@
+body{
+    margin:0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.my-img{
+    width:200px;
+}
+
+.card{
+    padding:20px;
+    display:flex;
+    justify-content:space-around;
+    width:400px;
+    margin: 0 auto;
+    background:#ddebf8;
+    color: #2b2839;
+    border-bottom:5px solid #d8cefe;
+}
+.aa{
+    text-align:center;
+}
