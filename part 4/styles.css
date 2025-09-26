@@ -1,0 +1,51 @@
+body{
+    font-family: 'Orbitron' , sans-serif;
+    color:white;
+     background-size: cover;
+     margin:0;
+}
+.hero{
+    background-image:url(sasuke-uchiha.gif);
+     background-size: cover;
+     padding: 10px 0 200px
+}
+.join-the{
+    text-align:center;
+    text-shadow: 5px 5px 5px black;
+}
+.apply-btn{
+    font:bold;
+    display:block;
+    margin: 0 auto ;
+    border:0;   
+    border: radius 2px;
+    padding:6px 12px;
+    background:white;
+    font-family: inherit;
+    /* text-shadow:1px 1px 5px black; */
+}
+.underline{
+    /* border-bottom:2px solid white; */
+    text-decoration:underline;
+}
+#logo{
+    width:200px;
+    height:100px;
+    display:flex;
+    margin:0 auto;
+}
+.footer-text{
+    color:white;
+    text-align:center;
+    text-shadow:1px 1px 5px black;
+}
+.logoo{
+    width: 100px;
+    height:90px;
+    margin-right:20px;
+}
+.footer{
+    display:flex;
+    justify-content:center;
+    background:#1778c0;
+}
