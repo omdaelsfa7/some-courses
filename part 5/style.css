@@ -1,0 +1,56 @@
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background:#a2d2ff;
+    color:white;
+    text-shadow: 0 0 1px black;
+}
+#header{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+#bday-age{
+    background:#EFB0c9;
+    padding:5px 10px;
+    border-radius:5px;
+    margin-bottom:10px;
+}
+#bday-date{
+    margin:0;
+    background:#EFB0c9;
+    padding:5px 10px;
+    border-radius:5px;
+}
+#guts{
+    display: block;
+    margin: 5px auto;
+    border:5px solid #ffffff;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+#present{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+#cover{
+    width:200px;
+    height:200px;
+    border: 6px solid white;
+    border-radius:10px;
+    background-image:url(cover.avif);
+    background-size:cover;
+}
+#cover:hover{
+    background-image:url(present.jpg)
+}
+#present{
+    margin:100px 0 ;
+}
+.wishing{
+    margin:10px;
+}
+.hover{
+    margin:5px;
+}
