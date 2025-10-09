@@ -8,6 +8,7 @@ import { Component , Input} from '@angular/core';
   styleUrl: './user.css'
 })
 export class User {
+  
   @Input({required: true}) avatar!: string; 
   @Input({required : true}) name!: string; 
 

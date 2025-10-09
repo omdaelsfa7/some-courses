@@ -39,3 +39,6 @@ span {
   font-size: 0.8rem;
   font-weight: normal;
 }
+div {
+  margin-bottom: 10px;
+}
