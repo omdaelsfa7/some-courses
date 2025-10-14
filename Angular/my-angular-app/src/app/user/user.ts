@@ -1,5 +1,10 @@
-import { Component, Input, Output ,EventEmitter ,output } from '@angular/core';
+import { Component, Input, Output, EventEmitter, output } from '@angular/core';
 
+type User = {
+  id: string;
+  avatar: string;
+  name: string;
+};
 @Component({
   selector: 'app-user',
   imports: [],
@@ -7,17 +12,15 @@ import { Component, Input, Output ,EventEmitter ,output } from '@angular/core';
   templateUrl: './user.html',
   styleUrl: './user.css',
 })
-export class User {
-  @Input({ required: true }) id!: string;
-  @Input({ required: true }) avatar!: string;
-  @Input({ required: true }) name!: string;
-  @Output() select = new EventEmitter();
+export class UserComponent {
+  @Input({ required: true }) user!: User;
+  @Output() select = new EventEmitter<string>();
 
   get imagePath() {
-    return 'assets/' + this.avatar;
+    return 'assets/' + this.user.avatar;
   }
 
   onSelectUser() {
-    this.select.emit(this.id);
+    this.select.emit(this.user.id);
   }
 }
