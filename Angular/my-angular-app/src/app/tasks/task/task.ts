@@ -1,5 +1,12 @@
-import { Component } from '@angular/core';
+import { Component , Input } from '@angular/core';
 
+type task={
+  id :string ,
+  userId : string ,
+  title: string , 
+  summary: string, 
+  dueDate: string 
+}
 @Component({
   selector: 'app-task',
   imports: [],
@@ -8,5 +15,6 @@ import { Component } from '@angular/core';
   styleUrl: './task.css'
 })
 export class Task {
-
+  @Input() name? :string
+  @Input({required :true }) task ?: task
 }

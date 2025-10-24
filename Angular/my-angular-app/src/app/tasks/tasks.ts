@@ -1,6 +1,7 @@
 import { Component , Input  } from '@angular/core';
 import { DUMMY_USERS } from '../dummy-user';
 import { Task } from "./task/task";
+import { dummyTasks } from './dummy-tasks';
 
 @Component({
   selector: 'app-tasks',
@@ -10,13 +11,16 @@ import { Task } from "./task/task";
   styleUrl: './tasks.css'
 })
 export class Tasks {
-  @Input() id ?:string | null;
+  @Input({required : true}) userId ?:string | null;
   name?: string  
-
+  tasks = dummyTasks
   ngOnChanges() {
-    if (this.id) {
-      const user = DUMMY_USERS.find(u => u.id === this.id);
+    if (this.userId) {
+      const user = DUMMY_USERS.find(u => u.id === this.userId);
       this.name = user?.name;
     }
+  }
+  get selectedUserTasks(){
+    return this.tasks.filter((task)=> task.userId === this.userId );
   }
 }
