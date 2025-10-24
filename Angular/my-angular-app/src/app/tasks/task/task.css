@@ -16,6 +16,17 @@ time {
   text-align: right;
   margin: 0;
 }
+div {
+  border-radius: 6px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}eader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
 
 .actions button {
   font: inherit;
